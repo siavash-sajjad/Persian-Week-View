@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WeekView">
+        <attr name="firstDayOfWeek" format="enum">
+            <enum name="یکشنبه" value="1"/>
+            <enum name="دوشنبه" value="2"/>
+            <enum name="سهشنبه" value="3"/>
+            <enum name="چهارشنبه" value="4"/>
+            <enum name="پنجشنبه" value="5"/>
+            <enum name="جمعه" value="6"/>
+            <enum name="شنبه" value="7"/>
+        </attr>
+        <attr name="hourHeight" format="dimension"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="eventTextSize" format="dimension"/>
+        <attr name="headerColumnPadding" format="dimension"/>
+        <attr name="headerRowPadding" format="dimension"/>
+        <attr name="columnGap" format="dimension"/>
+        <attr name="headerColumnTextColor" format="color"/>
+        <attr name="noOfVisibleDays" format="integer"/>
+        <attr name="headerRowBackgroundColor" format="color"/>
+        <attr name="dayBackgroundColor" format="color"/>
+        <attr name="hourSeparatorColor" format="color"/>
+        <attr name="todayBackgroundColor" format="color"/>
+        <attr name="todayHeaderTextColor" format="color"/>
+        <attr name="hourSeparatorHeight" format="dimension"/>
+        <attr name="eventTextColor" format="color"/>
+        <attr name="eventPadding" format="dimension"/>
+        <attr name="headerColumnBackground" format="color"/>
+        <attr name="dayNameLength" format="enum">
+            <enum name="length_short" value="1"/>
+            <enum name="length_long" value="2"/>
+        </attr>
+        <attr name="overlappingEventGap" format="dimension"/>
+        <attr name="eventMarginVertical" format="dimension"/>
+        <attr name="xScrollingSpeed" format="float"/>
+    </declare-styleable>
+</resources>
