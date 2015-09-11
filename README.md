@@ -1,9 +1,9 @@
 Android Week View
 =================
 
-**Android Week View** is an android library to display calendars (week view or day view) within the app. It supports custom styling.
+**Android Week View for iranian** is an android library to display calendars (week view or day view) within the app. It supports custom styling.
 
-![](images/screen-shot.png)
+![](images/screen-shot1.png)
 
 Features
 ------------
