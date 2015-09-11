@@ -24,43 +24,8 @@ Who uses it
 Usage
 ---------
 
-1. Import the library into your project.
-  * Grab via maven
-  
-    ```xml
-    <dependency>
-      <groupId>com.github.alamkanak</groupId>
-      <artifactId>android-week-view</artifactId>
-      <version>1.2.3</version>
-      <type>aar</type>
-    </dependency>
     ```
-  * Grab via gradle
-  
-    ```groovy
-    compile 'com.github.alamkanak:android-week-view:1.2.3'
-    ```
-2. Add WeekView in your xml layout.
-
-    ```xml
-    <com.alamkanak.weekview.WeekView
-            android:id="@+id/weekView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:eventTextColor="@android:color/white"
-            app:textSize="12sp"
-            app:hourHeight="60dp"
-            app:headerColumnPadding="8dp"
-            app:headerColumnTextColor="#8f000000"
-            app:headerRowPadding="12dp"
-            app:columnGap="8dp"
-            app:noOfVisibleDays="3"
-            app:headerRowBackgroundColor="#ffefefef"
-            app:dayBackgroundColor="#05000000"
-            app:todayBackgroundColor="#1848adff"
-            app:headerColumnBackground="#ffffffff"/>
-    ```
-3. Write the following code in your java file.
+Write the following code in your java file.
 
     ```java
     // Get a reference for the week view in the layout.
@@ -76,9 +41,9 @@ Usage
     // Set long press listener for events.
     mWeekView.setEventLongPressListener(mEventLongPressListener);
     ```
-4. Implement `WeekView.MonthChangeListener`, `WeekView.EventClickListener`, `WeekView.EventLongPressListener` according to your need.
+Implement `WeekView.MonthChangeListener`, `WeekView.EventClickListener`, `WeekView.EventLongPressListener` according to your need.
 
-5. Provide the events for the `WeekView` in `WeekView.MonthChangeListener.onMonthChange()` callback. Please remember that the calendar pre-loads events of three consecutive months to enable lag-free scrolling.
+Provide the events for the `WeekView` in `WeekView.MonthChangeListener.onMonthChange()` callback. Please remember that the calendar pre-loads events of three consecutive months to enable lag-free scrolling.
 
     ```java
     WeekView.MonthChangeListener mMonthChangeListener = new WeekView.MonthChangeListener() {
@@ -130,11 +95,6 @@ Use the following interfaces according to your need.
 - `mWeekView.setEmptyViewLongPressListener()` to get a callback when any empty space is long pressed
 - `mWeekView.setDateTimeInterpreter()` to set your own labels for the calendar header row and header column
 - `mWeekView.setScrollListener()` to get an event every time the first visible day has changed
-
-Sample
-----------
-
-There is also a [sample app](https://github.com/alamkanak/Android-Week-View/tree/master/sample) to get you started.
 
 To do
 -------
