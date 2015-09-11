@@ -161,7 +161,8 @@ public class MainActivity extends ActionBarActivity implements WeekView.MonthCha
                 if (shortDate) {
                     weekday = String.valueOf(weekday.charAt(0));
                 }
-                return test.toUpperCase() + format.format(date.getTime());
+                //return test.toUpperCase() + " " + format.format(date.getTime());
+                return test.toUpperCase() + " " + persianCalendar.getIranianDate();
             }
 
             @Override
