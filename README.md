@@ -23,8 +23,6 @@ Who uses it
 
 Usage
 ---------
-
-    ```
 Write the following code in your java file.
 
     ```java
